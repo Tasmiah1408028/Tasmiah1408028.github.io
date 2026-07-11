@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasmiah Haque · AI/ML Researcher</title>
+    <meta
+      name="description"
+      content="Tasmiah Haque — AI/ML researcher and Ph.D. candidate specializing in generative time-series modeling, video motion transfer, and bandwidth-efficient inference."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#top" class="nav__brand">TH<span>.</span></a>
+        <nav class="nav__links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+            title="Toggle theme"
+          ></button>
+          <button class="nav__burger" id="navBurger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="hero__inner reveal">
+        <div class="hero__text">
+          <p class="hero__eyebrow" id="heroEyebrow"></p>
+          <h1 class="hero__name" id="heroName"></h1>
+          <p class="hero__tagline" id="heroTagline"></p>
+          <div class="hero__cta">
+            <a href="#research" class="btn btn--primary">View Research</a>
+            <a
+              href="assets/Tasmiah_Haque_Academic_CV.pdf"
+              class="btn btn--ghost"
+              target="_blank"
+              rel="noopener"
+              >Download CV</a
+            >
+          </div>
+          <div class="hero__socials" id="heroSocials"></div>
+        </div>
+        <div class="hero__portrait">
+          <div class="portrait-frame">
+            <img id="heroPhoto" alt="Tasmiah Haque" />
+            <div class="portrait-ring" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__stats" id="heroStats"></div>
+    </section>
+
+    <main>
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about reveal">
+          <div class="about__lead">
+            <p id="aboutSummary"></p>
+          </div>
+          <aside class="about__side">
+            <h3 class="about__side-title">Research Focus</h3>
+            <p id="aboutInterests" class="about__interests"></p>
+            <ul class="chips" id="aboutHighlights"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section class="section" id="research">
+        <div class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Selected Research</h2>
+        </div>
+        <div class="research-grid" id="researchGrid"></div>
+      </section>
+
+      <!-- Publications -->
+      <section class="section" id="publications">
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Publications</h2>
+        </div>
+        <div class="pub-filters reveal" id="pubFilters"></div>
+        <ol class="pub-list" id="pubList"></ol>
+      </section>
+
+      <!-- Experience + Education timeline -->
+      <section class="section" id="experience">
+        <div class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <div class="timeline" id="expTimeline"></div>
+
+        <div class="section__head reveal" style="margin-top: 4rem">
+          <span class="section__index">05</span>
+          <h2 class="section__title">Education</h2>
+        </div>
+        <div class="timeline" id="eduTimeline"></div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="section__head reveal">
+          <span class="section__index">06</span>
+          <h2 class="section__title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </section>
+
+      <!-- Teaching & Awards -->
+      <section class="section" id="teaching">
+        <div class="section__head reveal">
+          <span class="section__index">07</span>
+          <h2 class="section__title">Teaching, Mentoring &amp; Awards</h2>
+        </div>
+        <div class="two-col">
+          <div class="reveal">
+            <h3 class="subhead">Teaching &amp; Mentoring</h3>
+            <div class="teach-list" id="teachList"></div>
+          </div>
+          <div class="reveal">
+            <h3 class="subhead">Honors &amp; Awards</h3>
+            <div class="award-list" id="awardList"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--contact" id="contact">
+        <div class="contact reveal">
+          <span class="section__index">08</span>
+          <h2 class="contact__title">Let's connect</h2>
+          <p class="contact__lead">
+            Open to research collaborations, industry roles in AI/ML, and
+            conversations about real-time generative systems.
+          </p>
+          <div class="contact__actions" id="contactActions"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="footerText"></p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
