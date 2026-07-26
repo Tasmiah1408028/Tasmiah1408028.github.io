@@ -40,14 +40,7 @@
       }
       wrap.appendChild(a);
     });
-
-    const stats = $("#heroStats");
-    D.stats.forEach((s) => {
-      const box = el("div", "stat");
-      box.appendChild(el("div", "stat__value", s.value));
-      box.appendChild(el("div", "stat__label", s.label));
-      stats.appendChild(box);
-    });
+    // Hero metrics are rendered statically in index.html (cache-proof).
   }
 
   /* ---------- About ---------- */

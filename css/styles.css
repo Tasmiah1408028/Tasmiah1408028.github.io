@@ -392,8 +392,8 @@ img {
   max-width: var(--maxw);
   margin: 2.5rem auto 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -401,6 +401,8 @@ img {
   overflow: hidden;
 }
 .stat {
+  flex: 1 1 0;
+  min-width: 180px;
   background: var(--bg-elev);
   padding: 1.4rem 1.2rem;
   text-align: center;
@@ -923,7 +925,7 @@ img {
     justify-content: center;
   }
   .hero__stats {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .about,
   .two-col {
@@ -949,9 +951,6 @@ img {
   }
 }
 @media (max-width: 460px) {
-  .hero__stats {
-    grid-template-columns: 1fr 1fr;
-  }
   .pub {
     grid-template-columns: 1fr;
     gap: 0.4rem;

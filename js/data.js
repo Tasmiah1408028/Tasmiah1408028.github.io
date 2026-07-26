@@ -17,15 +17,15 @@ const PORTFOLIO = {
     altEmail: "imran.wvu@gmail.com",
     phone: "(681) 285-4175",
     linkedin: "https://www.linkedin.com/in/tasmiahaque",
-    scholar: "https://scholar.google.com/",
+    scholar: "https://scholar.google.com/citations?user=qeKJXmAAAAAJ",
   },
 
   // Small headline metrics for the hero band
   stats: [
-    { value: "3+", label: "Years of research" },
-    { value: "5", label: "Publications & preprints" },
-    { value: "2×", label: "Bandwidth reduction achieved" },
-    { value: "95%", label: "Vessel-tracking accuracy" },
+    { value: "5+", label: "Years of research" },
+    { value: "1+", label: "Years of Industrial Experience" },
+    { value: "13", label: "Publications & preprints" },
+    { value: "2", label: "Honors & Awards" },
   ],
 
   about: {
