@@ -8,13 +8,13 @@ const PORTFOLIO = {
     name: "Tasmiah Haque",
     title: "AI / ML Researcher · Ph.D. Candidate",
     tagline:
-      "Building real-time intelligent systems at the intersection of video analytics, probabilistic modeling, and edge deployment.",
+      "Building real-time intelligent systems at the intersection of video analytics, probabilistic modeling, and anomaly detection.",
     location: "Morgantown, WV, USA",
     photo: "assets/profile.jpg",
     resumeProfessional: "assets/Tasmiah_Haque_Professional_Resume.pdf",
-    resumeAcademic: "assets/Tasmiah_Haque_Academic_CV.pdf",
+    resumeAcademic: "assets/Tasmiah_Haque_Professional_Resume.pdf",
     email: "th00027@mix.wvu.edu",
-    altEmail: "imran.wvu@gmail.com",
+    altEmail: "tasmiah1408028@gmail.com",
     phone: "(681) 285-4175",
     linkedin: "https://www.linkedin.com/in/tasmiahaque",
     scholar: "https://scholar.google.com/citations?user=qeKJXmAAAAAJ",
@@ -24,13 +24,13 @@ const PORTFOLIO = {
   stats: [
     { value: "5+", label: "Years of research" },
     { value: "1+", label: "Years of Industrial Experience" },
-    { value: "13", label: "Publications & preprints" },
+    { value: "13", label: "Publications & preprints (· Supply Chain · Generative AI " },
     { value: "2", label: "Honors & Awards" },
   ],
 
   about: {
     summary:
-      "AI/ML researcher with 3+ years of experience building real-time intelligent systems at the intersection of video analytics, probabilistic modeling, and edge deployment. Ph.D. candidate (expected Nov 2026) specializing in generative time-series models, motion keypoint prediction, and bandwidth-efficient inference pipelines. Published author with peer-reviewed works and a proven track record across both academic research and industrial settings.",
+      "AI/ML researcher with 3+ years of experience building real-time intelligent systems at the intersection of video analytics, probabilistic modeling, and anomaly detection. Ph.D. candidate (expected April 2027) specializing in generative time-series models, motion keypoint prediction, and bandwidth-efficient inference pipelines. Published author with peer-reviewed works including a NeurIPS 2026 WiML workshop paper on real-time fall detection and a proven track record across both academic research and industrial settings.",
     interests:
       "Generative time-series modeling for real-time AI systems under deployment constraints, with a focus on inference-time refinement and applications in bandwidth-efficient video motion synthesis, remote patient monitoring, and smart manufacturing.",
     highlights: [
@@ -60,15 +60,15 @@ const PORTFOLIO = {
     },
     {
       title: "Generative Time-Series Modeling for Real-Time Video Synthesis",
-      venue: "MTAP 2026",
+      venue: "MTAP 2026 · INFORMS 2026",
       period: "2026",
       description:
         "Conducted a systematic accuracy–diversity tradeoff analysis using VRNN and GRU-NF models (PyTorch, PyTorchTS) for keypoint-based video conferencing, remote patient monitoring, and manufacturing anomaly detection.",
       tags: ["PyTorch", "Time-Series", "Benchmarking"],
     },
     {
-      title: "Real-Time Remote Fall Prediction via Motion Keypoints",
-      venue: "Manuscript in preparation",
+      title: "Unsupervised keypoints for real-time fall detection: Comparative analysis under real-world conditions with predictive bandwidth reduction",
+      venue: "Under review at Scientific Reports · WiML @ NeurIPS 2026",
       period: "May 2025 – Present",
       description:
         "Extending the unsupervised keypoint motion framework to extract and forecast patient activity patterns in real time for fall detection, anomaly classification, and communication-overhead reduction in remote health monitoring. Mentoring an undergraduate co-author through the full research cycle.",
@@ -86,21 +86,32 @@ const PORTFOLIO = {
 
   publications: [
     {
+      type: "Workshop",
+      authors: "Haque, T., Kosinski, J., Al-Mamun, M.A., and Das, S.",
+      year: "2026",
+      title:
+        "Unsupervised keypoints for real-time fall detection: Comparative analysis under real-world conditions with predictive bandwidth reduction.",
+      venue:
+        "Women in Machine Learning (WiML) Workshop, NeurIPS 2026 (accepted, poster); under review at Scientific Reports. arXiv:2607.15400.",
+    },
+    {
       type: "Journal",
       authors:
         "Haque, T., Syed, M.A.B., Jeong, B., Bai, X., Mohan, S., Paul, S., Ahmed, I., and Das, S.",
       year: "2026",
       title:
         "Towards efficient real-time video motion transfer via generative time series modeling.",
-      venue: "Multimedia Tools and Applications, 85(2), p. 51.",
+      venue:
+        "Multimedia Tools and Applications, 85(2), p. 51. Oral presentation, INFORMS Annual Meeting 2026.",
     },
     {
       type: "Journal",
       authors: "Haque, T., Syed, M.A.B., Das, S., and Ahmed, I.",
       year: "2024",
       title:
-        "Advancing marine surveillance: A hybrid approach of physics-infused neural network for enhanced vessel tracking using automatic identification system data.",
-      venue: "Journal of Marine Science and Engineering, 12(11), p. 1913.",
+        "Advancing marine surveillance: A hybrid approach of physics-infused neural network for enhanced vessel tracking using AIS data.",
+      venue:
+        "Journal of Marine Science and Engineering, 12(11), p. 1913. Oral presentation, IISE Annual Conference 2023.",
     },
     {
       type: "Conference",
@@ -109,7 +120,7 @@ const PORTFOLIO = {
       title:
         "Inference-time stochastic refinement of GRU-Normalizing Flow for real-time video motion transfer.",
       venue:
-        "59th Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, CA, pp. 1313–1318.",
+        "59th Asilomar Conference on Signals, Systems, and Computers, pp. 1313–1318 (poster).",
     },
     {
       type: "Conference",
@@ -117,8 +128,7 @@ const PORTFOLIO = {
       year: "2024",
       title:
         "Enhancing bandwidth efficiency for video motion transfer applications using deep learning based keypoint prediction.",
-      venue:
-        "Int. Conference on Engineering Applications of Neural Networks (EANN), Springer, pp. 134–151.",
+      venue: "EANN 2024, Springer, pp. 134–151.",
     },
     {
       type: "Preprint",
@@ -137,20 +147,22 @@ const PORTFOLIO = {
       period: "Aug 2023 – Present",
       type: "Research",
       points: [
-        "Developed a VRNN keypoint-prediction framework for real-time video motion transfer, enabling future-frame generation with up to 2× bandwidth reduction.",
-        "Designed inference-time stochastic refinement for a GRU–Normalizing Flow model using MCMC, improving the diversity–fidelity tradeoff without retraining.",
-        "Built and benchmarked generative time-series models (VRNN, GRU-NF) in PyTorch/PyTorchTS for accuracy–diversity analysis.",
-        "Designed a remote fall-prediction pipeline integrating motion keypoints, future motion prediction, and anomaly classification for healthcare monitoring.",
+        "Developed a VRNN keypoint-prediction framework integrated with the First Order Motion Model for real-time video motion transfer, enabling future-frame generation with up to 2× additional bandwidth reduction for video conferencing, VR, and remote monitoring.",
+        "Designed training-free inference-time stochastic refinement for a GRU–Normalizing Flow model using MCMC, improving the diversity–fidelity tradeoff in generated video motion without retraining the base model.",
+        "Built and benchmarked generative time-series models (VRNN, GRU-NF) in PyTorch/PyTorchTS for accuracy–diversity analysis across video synthesis and industrial anomaly detection tasks.",
+        "Designed a privacy-preserving real-time fall-detection pipeline integrating unsupervised motion keypoints, future motion prediction, predictive bandwidth reduction, and anomaly classification for healthcare monitoring; benchmarked against supervised pose under real-world conditions (accepted at WiML @ NeurIPS 2026).",
+        "Extending the fall-detection framework to multimodal sensing, fusing video motion keypoints with wearable IMU signals for more robust fall detection (ongoing).",
+        "Mentored four undergraduate researchers (Aug 2024 – present) through literature review, experimental design, PyTorch implementation, and writing; one student is a co-author on the fall-detection paper.",
       ],
     },
     {
-      role: "Graduate Teaching Assistant & Researcher",
-      org: "West Virginia University, Morgantown, WV",
+      role: "Graduate Researcher & Teaching Assistant",
+      org: "Dept. of Industrial and Management Systems Engineering, West Virginia University",
       period: "Aug 2021 – May 2023",
       type: "Research / Teaching",
       points: [
-        "Developed a physics-infused LSTM for marine vessel track association using AIS data, achieving 95% prediction accuracy (published in JMSE).",
-        "Delivered R programming tutorials for Advanced Analysis of Engineering Data, covering statistical methods, visualization, and data interpretation.",
+        "Developed a physics-infused LSTM for marine vessel track association using AIS data in TensorFlow, achieving 95% average prediction accuracy.",
+        "Designed and delivered weekly R labs for Advanced Analysis of Engineering Data (undergraduate course), covering regression, hypothesis testing, and statistical process control.",
       ],
     },
     {
@@ -166,27 +178,51 @@ const PORTFOLIO = {
     },
   ],
 
+  // Each entry can have a short `detail` paragraph and/or a `points` list.
   teaching: [
     {
       role: "Undergraduate Research Mentor",
       org: "School of Mathematical and Data Sciences, WVU",
-      period: "May 2025 – Present",
-      detail:
-        "Mentoring a B.S. Computer Science student on an unsupervised keypoint-based fall detection system, guiding them through literature review, experimental design, PyTorch implementation, and academic writing as a named co-author.",
+      period: "Aug 2024 – Present",
+      points: [
+        "Mentored an undergraduate student (Grady King, Data Science) in deep learning and sequential data analysis to build foundational research competency.",
+        "Mentored Jacob Kosinski (B.S. Computer Science) through deep learning architectures, time-series concepts, keypoint extraction, and experimental design; he presented the work as his senior capstone and is a named co-author on the fall-detection preprint.",
+        "Onboarding two additional mentees (Reese Allen, Mechanical Engineering & Data Science; Chase Muir, Chemistry & Data Science) whose capstone projects will extend my doctoral research in new directions.",
+      ],
     },
     {
-      role: "Graduate Teaching Assistant — Deep Generative Models & Scalable Computing",
+      role: "Graduate Teaching Assistant — Introduction to Data Science, Special Topics: Data Visualization and Wrangling with R",
       org: "School of Mathematical and Data Sciences, WVU",
-      period: "Jan 2026 – May 2026",
+      period: "Aug 2024 – Dec 2025",
       detail:
-        "Created PyTorch Jupyter notebooks supporting instruction on linear neural networks, recurrent neural networks, and attention mechanisms.",
+        "Proctored course examinations and evaluated individual assignments through Blackboard (eCampus).",
     },
     {
-      role: "Graduate Teaching Assistant — Advanced Analysis of Engineering Data",
+      role: "Graduate Teaching Assistant — Statistical Machine Learning",
+      org: "School of Mathematical and Data Sciences, WVU",
+      period: "Aug 2026 – Dec 2026",
+      detail:
+        "Provide instructional support on fundamental machine learning concepts and methods, helping students strengthen their conceptual understanding and apply statistical learning techniques to practical problems",
+    },
+    {
+      role: "Graduate Teaching Assistant",
       org: "Dept. of Industrial & Management Systems Engineering, WVU",
       period: "Aug 2021 – May 2023",
-      detail:
-        "Designed and delivered weekly R lab sessions on exploratory data analysis, regression modeling, hypothesis testing, and statistical process control.",
+      points: [
+        "<strong>Advanced Analysis of Engineering Data:</strong> produced a series of R/RStudio tutorial videos with step-by-step walkthroughs on exploratory data analysis, regression modeling, hypothesis testing, and statistical process control, shared with all enrolled students as a self-study resource; held weekly office hours and gave individualized written feedback on analyses and lab reports.",
+        "<strong>Computer Applications in Industrial Engineering:</strong> held weekly office hours on programming and computational methods; graded assignments and projects with detailed feedback.",
+        "<strong>Simulation of Digital Methods:</strong> supported students with discrete-event simulation concepts and software-based modeling; graded assignments.",
+        "<strong>Team Facilitation:</strong> assisted students with collaborative project planning and professional deliverables; graded assignments and team submissions.",
+      ],
+    },
+  ],
+
+  service: [
+    { title: "Judge, WVU Undergraduate Research Symposium", org: "West Virginia University", year: "2026" },
+    {
+      title: "Committee Member (Program Coordinator)",
+      org: "Bangladeshi Students Association, West Virginia University",
+      year: "2023–24",
     },
   ],
 
@@ -194,7 +230,7 @@ const PORTFOLIO = {
     {
       degree: "Ph.D. in Industrial Engineering",
       school: "West Virginia University, Morgantown, WV",
-      period: "Aug 2023 – Nov 2026 (Expected)",
+      period: "Aug 2023 – April 2027 (Expected)",
       note: "Dissertation: Generative Sequence Forecasting for Real-time Decision Systems Under Deployment Constraints",
     },
     {
@@ -226,7 +262,7 @@ const PORTFOLIO = {
       group: "Computer Vision / Video AI",
       items: [
         "Motion keypoint prediction",
-        "Video motion transfer",
+        "Keypoint-based video motion transfer",
         "Real-time video synthesis",
         "Bandwidth-efficient AI pipelines",
       ],
@@ -236,12 +272,17 @@ const PORTFOLIO = {
       items: ["Python", "PyTorch", "PyTorchTS", "TensorFlow", "R", "MATLAB", "C"],
     },
     {
-      group: "Infrastructure & HPC",
-      items: ["NVIDIA RTX / A10 / A100 GPU", "Linux", "Windows", "LaTeX"],
+      group: "Infrastructure & MLOps",
+      items: [
+        "Kubernetes",
+        "NVIDIA RTX / A10 / A100 GPU training & inference",
+        "Linux",
+        "Windows",
+      ],
     },
     {
       group: "Industrial & Operations",
-      items: ["SAP", "CPLEX", "Arena", "Minitab", "AutoCAD", "SolidWorks"],
+      items: ["SAP", "CPLEX", "Arena simulation", "Minitab", "AutoCAD", "SolidWorks"],
     },
   ],
 

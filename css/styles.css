@@ -825,12 +825,29 @@ img {
   font-size: 0.9rem;
   color: var(--ink-soft);
 }
+.teach-points {
+  margin: 0.3rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.teach-points li {
+  margin: 0.3rem 0;
+}
+.teach-points strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.subhead--spaced {
+  margin-top: 2.2rem;
+}
 .award-item {
   display: flex;
   gap: 1rem;
   align-items: baseline;
 }
 .award-item .yr {
+  white-space: nowrap;
   font-family: var(--serif);
   font-weight: 600;
   color: var(--accent);

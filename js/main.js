@@ -155,18 +155,24 @@
       item.innerHTML = `
         <h4>${x.role}</h4>
         <p class="meta">${x.org} · ${x.period}</p>
-        <p>${x.detail}</p>`;
+        ${x.detail ? `<p>${x.detail}</p>` : ""}
+        ${x.points ? `<ul class="teach-points">${x.points.map((p) => `<li>${p}</li>`).join("")}</ul>` : ""}`;
       t.appendChild(item);
     });
 
-    const a = $("#awardList");
-    D.awards.forEach((x) => {
-      const item = el("div", "award-item");
-      item.innerHTML = `
-        <span class="yr">${x.year}</span>
-        <div><h4>${x.title}</h4><span class="org">${x.org}</span></div>`;
-      a.appendChild(item);
-    });
+    const yearList = (sel, rows) => {
+      const box = $(sel);
+      if (!box || !rows) return;
+      rows.forEach((x) => {
+        const item = el("div", "award-item");
+        item.innerHTML = `
+          <span class="yr">${x.year}</span>
+          <div><h4>${x.title}</h4><span class="org">${x.org}</span></div>`;
+        box.appendChild(item);
+      });
+    };
+    yearList("#awardList", D.awards);
+    yearList("#serviceList", D.service);
   }
 
   /* ---------- Contact ---------- */
