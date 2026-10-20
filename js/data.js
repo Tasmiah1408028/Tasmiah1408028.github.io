@@ -152,7 +152,7 @@ const PORTFOLIO = {
         "Built and benchmarked generative time-series models (VRNN, GRU-NF) in PyTorch/PyTorchTS for accuracy–diversity analysis across video synthesis and industrial anomaly detection tasks.",
         "Designed a privacy-preserving real-time fall-detection pipeline integrating unsupervised motion keypoints, future motion prediction, predictive bandwidth reduction, and anomaly classification for healthcare monitoring; benchmarked against supervised pose under real-world conditions (accepted at WiML @ NeurIPS 2026).",
         "Extending the fall-detection framework to multimodal sensing, fusing video motion keypoints with wearable IMU signals for more robust fall detection (ongoing).",
-        "Served as Graduate Teaching Assistant for three undergraduate Data Science courses."
+        "Served as Graduate Teaching Assistant for three undergraduate Data Science courses.",
         "Mentored four undergraduate researchers (Aug 2024 – present) through literature review, experimental design, PyTorch implementation, and writing; one student is a co-author on the fall-detection paper.",
       ],
     },
