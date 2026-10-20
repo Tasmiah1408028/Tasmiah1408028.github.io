@@ -22,7 +22,7 @@ const PORTFOLIO = {
 
   // Small headline metrics for the hero band
   stats: [
-    { value: "5+", label: "Years of research" },
+    { value: "5+", label: "Years of research in Generative AI" },
     { value: "1+", label: "Years of Industrial Experience" },
     { value: "13", label: "Publications & preprints (· Supply Chain · Generative AI " },
     { value: "2", label: "Honors & Awards" },
